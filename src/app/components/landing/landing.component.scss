@@ -1,0 +1,40 @@
+.search{
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    font-size:18px;
+
+}
+
+.search input {
+    width: 80%;
+    padding: 8px 16px;
+    margin-top:20px;
+    outline:none;
+}
+
+.search h3{
+    color:blue;
+}
+
+.search button{
+    padding:10px 17px;
+    background-color:blue;
+    border: none;
+    color:#fff;
+    border-top-right-radius:10px
+
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    .search input {
+        width: 80%;
+        padding: 8px 16px;
+        margin-top:40px;
+        outline:none;
+        border:1px solid black
+
+    }
+}

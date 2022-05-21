@@ -1,0 +1,18 @@
+<div class="details">
+    <div class="header">
+        <div><button [routerLink]="['/']">back</button></div>
+        <div><h3>YOUR FAVOURITE GIF DETAILS</h3></div>
+    </div>
+
+    <div>
+        <div class="gif-image">
+            <img [src]="singleGif?.images.downsized.url" alt="gifImage"/>
+        </div>
+        <div><span class="title-style">Title:</span> {{singleGif?.title}}</div>
+        <div class="space"> <span class="title-style">Rating: </span> {{singleGif?.rating}}</div>
+        <div class="space"> <span class="title-style">trending datetime:</span> {{singleGif?.trending_datetime}}</div>
+        <div class="space"> <span class="title-style">source tld:</span> {{singleGif?.source_tld}}</div>
+        <div class="space"><span class="title-style">import datetime:</span> {{singleGif?.import_datetime}}</div>
+        <div class="space"><span class="title-style">is sticker:</span> {{singleGif?.is_sticker}}</div>
+    </div>
+</div>

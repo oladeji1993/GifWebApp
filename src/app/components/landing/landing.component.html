@@ -1,0 +1,9 @@
+
+<div class="search">
+    <h3>SEARCH FOR YOUR FAVOURITE GIFS</h3>
+    <input type="text" placeholder="Search Gif" #gif name="search">
+    <button type="submit" (click)="search(gif.value)">Search</button>
+    <div *ngIf="show">Enter a valid Gif Name</div>
+</div>
+
+<app-gifs></app-gifs>

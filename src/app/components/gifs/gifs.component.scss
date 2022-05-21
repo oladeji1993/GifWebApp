@@ -1,0 +1,25 @@
+// .gifs{
+//     display: grid;
+//     grid-template-columns: auto auto auto auto;
+//     width: 1000px;
+//     margin: 0 auto;
+//     overflow:hidden
+// }
+.container{
+    display: flex;
+    text-align:center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.container img{
+    max-width: 250px;
+    margin-bottom:10px
+}
+
+@media only screen and (max-width: 600px) {
+    .container img{
+        max-width: 300px;
+        padding-top:20px;
+    }
+}

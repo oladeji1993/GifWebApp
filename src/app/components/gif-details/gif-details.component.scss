@@ -1,0 +1,53 @@
+.details{
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    font-size:18px;
+}
+
+.gif-image img{
+    max-width: 300px;
+
+}
+
+.details h3{
+    color:blue;
+}
+
+.header{
+    display:flex
+}
+
+.header button{
+    padding:10px 30px;
+    background-color:blue;
+    border: none;
+    color:#fff;
+    border-radius:10px;
+    margin-top:20px;
+    margin-right:30px;
+    cursor: pointer;
+}
+
+.gif-image{
+    margin-bottom: 20px;
+}
+
+.space{
+    margin-top:30px;
+}
+
+.title-style{
+    font-weight:bold
+}
+
+
+@media only screen and (max-width: 600px) {
+    .header{
+        display:block
+    }
+
+    .header button{
+        margin-bottom: 10px;
+    }
+}
