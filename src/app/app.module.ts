@@ -10,6 +10,7 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { LandingComponent } from './components/landing/landing.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -24,8 +25,9 @@ import { LandingComponent } from './components/landing/landing.component';
     AppRoutingModule,
     HttpClientModule,
     NgxSpinnerModule,
-    BrowserAnimationsModule
-    
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
+    FormsModule
 
   ],
   providers: [],

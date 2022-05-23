@@ -7,7 +7,9 @@ import { DataService } from 'src/app/service/data.service';
   styleUrls: ['./landing.component.scss']
 })
 export class LandingComponent implements OnInit {
-  show = false
+  show = false;
+  searchTerm = '';
+  gifs = [];
   constructor(
     private data: DataService
   ) { }
@@ -19,7 +21,9 @@ export class LandingComponent implements OnInit {
   search(searchKey: string) {
     if(searchKey !== ''){
       this.show = false;
-      this.data.getGifsData(searchKey);
+      this.data.getGifsData(searchKey).subscribe((response: any)=>{
+        this.gifs = response.data;
+      })
     }else{
       this.show = true;
     }
